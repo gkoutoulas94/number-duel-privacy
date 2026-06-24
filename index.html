@@ -66,7 +66,10 @@
           Google Play Games player profile information, if you choose to sign in with Google Play
           Games, such as player display name, player ID, and profile image if available
         </li>
-        <li>Game scores, leaderboard results, difficulty level, number of guesses, and game mode</li>
+        <li>
+          Game scores, leaderboard results, ELO rating, wins, losses, selected avatar style,
+          difficulty level, number of guesses, and game mode
+        </li>
         <li>
           Online match information, such as invite codes, player names, selected difficulty,
           guesses, match status, and temporary hidden numbers used to run the match
@@ -105,9 +108,10 @@
 
       <h2>Online Gameplay and Leaderboards</h2>
       <p>
-        If online features are enabled, Number Duel may store gameplay and leaderboard information
-        in Supabase. This may include player names, scores, invite codes, match status, guesses,
-        and temporary hidden numbers used during online matches.
+        If online features are enabled, Number Duel may store gameplay, profile, ranking, and
+        leaderboard information in Supabase. This may include player names, selected avatar style,
+        ELO rating, wins, losses, scores, invite codes, match status, guesses, and temporary hidden
+        numbers used during online matches.
       </p>
       <p>
         Online leaderboard and match data may be visible to other players where needed for gameplay,
