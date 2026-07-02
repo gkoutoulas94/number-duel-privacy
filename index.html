@@ -46,7 +46,7 @@
   <body>
     <main>
       <h1>Privacy Policy</h1>
-      <p><strong>Effective date:</strong> June 11, 2026</p>
+      <p><strong>Effective date:</strong> July 2, 2026</p>
 
       <p>Number Duel is a mobile game developed by Georgios Koutoulas.</p>
       <p>
@@ -63,8 +63,8 @@
       <ul>
         <li>Player name or display name</li>
         <li>
-          Google Play Games player profile information, if you choose to sign in with Google Play
-          Games, such as player display name, player ID, and profile image if available
+          Google Play Games profile information used by the game, such as player display name
+          and player ID
         </li>
         <li>
           Game scores, leaderboard results, ELO rating, wins, losses, selected avatar style,
@@ -77,8 +77,12 @@
         <li>App settings, such as sound and volume preferences</li>
         <li>Advertising identifiers and ad interaction data through Google AdMob</li>
         <li>
-          Basic device, app, diagnostics, crash, performance, and usage data that may be processed
-          by Google services or other app service providers
+          Purchase and subscription status, product ID, order ID, entitlement status, and expiry
+          information needed to verify and restore Google Play purchases
+        </li>
+        <li>
+          Basic device, app, diagnostics, crash, performance, integrity, and usage data processed
+          through Google services, Firebase Crashlytics, or other app service providers
         </li>
       </ul>
       <p>
@@ -101,7 +105,7 @@
 
       <h2>Local Data</h2>
       <p>
-        Some data, such as player name, sound settings, subscription preview state, and local
+        Some data, such as player name, sound settings, verified entitlement state, and local
         leaderboard scores, may be stored directly on your device.
       </p>
       <p>You can remove local data by clearing the app data from your device settings or uninstalling the app.</p>
@@ -131,13 +135,15 @@
 
       <h2>Subscriptions and Purchases</h2>
       <p>
-        Number Duel may show subscription tiers in the app, such as ad-free options. At the time of
-        this policy update, subscription purchases are not connected to live payment processing.
+        Subscriptions and in-app purchases are handled by Google Play Billing. Number Duel does
+        not receive or store your payment card or bank details.
       </p>
       <p>
-        If subscriptions or in-app purchases are enabled in the future, purchases will be handled
-        through Google Play Billing, and we may process purchase status information needed to unlock
-        paid features, restore purchases, and prevent fraud.
+        To unlock paid features, restore purchases, and prevent fraud, Number Duel verifies
+        purchases through the Google Play Developer API and stores limited purchase records such
+        as product ID, order ID, purchase token, purchase status, acknowledgement status, and
+        subscription expiry. Purchase records are linked to the player's Play Games ID and are not
+        displayed publicly.
       </p>
 
       <h2>Third-Party Services</h2>
@@ -145,7 +151,9 @@
       <ul>
         <li>Google Play Games Services, for sign-in and player profile features</li>
         <li>Google AdMob, for advertising and ad measurement</li>
-        <li>Google Play Billing, if subscriptions or in-app purchases are enabled in the future</li>
+        <li>Google Play Billing and Google Play Developer API, for purchases, subscriptions, restoration, and fraud prevention</li>
+        <li>Google Play Integrity, for app and device integrity checks</li>
+        <li>Firebase Crashlytics, for crash and diagnostic reporting</li>
         <li>Supabase, for online leaderboards and online match backend functionality</li>
       </ul>
       <p>These services may process data according to their own privacy policies.</p>
@@ -194,7 +202,7 @@
       <p>You can:</p>
       <ul>
         <li>Play without creating a separate email or password account</li>
-        <li>Use or skip Google Play Games sign-in, where available</li>
+        <li>Play offline without a Number Duel email/password account</li>
         <li>Clear local app data from your device settings</li>
         <li>
           Manage ad personalization and advertising ID settings from your Android device settings
@@ -203,11 +211,36 @@
         <li>Contact us to ask questions about your data</li>
       </ul>
 
+      <h2 id="account-deletion">Account and Data Deletion</h2>
+      <p>
+        You can request deletion of your Number Duel cloud profile and associated data from the
+        account deletion option inside the app or by emailing
+        <a href="mailto:gkoutoulas94@gmail.com?subject=Number%20Duel%20account%20deletion">
+          gkoutoulas94@gmail.com
+        </a>
+        with the subject <strong>Number Duel account deletion</strong>.
+      </p>
+      <p>
+        Cloud deletion includes the player profile, saved avatar, ELO and gameplay history,
+        matchmaking records, cloud sessions, and verified entitlement records linked to the Play
+        Games player ID. Local data can be removed by clearing the app's storage or uninstalling
+        the app.
+      </p>
+      <p>
+        Deleting Number Duel data does not automatically cancel an active Google Play
+        subscription. Subscriptions must be cancelled separately through Google Play. Limited
+        records may be retained only where required for legal, accounting, security, or
+        fraud-prevention obligations.
+      </p>
+
       <h2>Data Retention</h2>
       <p>Local data remains on your device until you clear app data or uninstall the app.</p>
       <p>
-        Online leaderboard and match data may remain stored while needed to provide the game,
-        maintain rankings, operate online matches, prevent abuse, or comply with legal obligations.
+        Online leaderboard, match, and purchase verification data remain stored while needed to
+        provide the game, maintain rankings, restore purchases, prevent abuse, or comply with legal
+        obligations. Data associated with a cloud profile is deleted following a verified deletion
+        request, except for limited records that must be retained for legal, accounting, security,
+        or fraud-prevention reasons.
       </p>
 
       <h2>Changes to This Policy</h2>
